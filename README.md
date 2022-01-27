@@ -1,12 +1,13 @@
 # address_validator_usps
 
-This is a simple program:
+This simple program:
 - Reads a csv file with addresses
-- Checks if addresses are valid
+- Checks if addresses are valid on USPS site
 - Writes addresses with verification data to a new csv file
 
 Description of the task is <a href='task.txt'>here</a>
 
+## How to use
 ### Clone this repo
 ```
 git clone https://github.com/Viktrols/address_validator_usps.git
@@ -28,3 +29,5 @@ pip install -r requirements.txt
 ```
 python address_validator.py
 ```
+
+P.S. You can use csv_converter.py and get_headers not only in this project:)
