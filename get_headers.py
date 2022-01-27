@@ -13,4 +13,7 @@ desktop_agents = ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 
                   'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0']
 
 def get_random_headers():
+    '''
+    Returns a random header to help avoid being blocked from the site.
+    '''
     return {'User-Agent': choice(desktop_agents),'Accept':'application/json, text/javascript, */*; q=0.01'}
