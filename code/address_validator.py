@@ -45,14 +45,14 @@ def main():
     write the result to a new сsv file.
     '''
     headers = get_random_headers()
-    list_with_addresses = convert_csv_to_list_of_dicts('input_data.csv')
+    list_with_addresses = convert_csv_to_list_of_dicts('./input_data.csv')
     checked_addresses = []
     for address in list_with_addresses:
         payload_data = get_payload_data(address)
         is_valid = check_address(USPS_URL, payload_data, headers)
         address['Is_valid'] = is_valid
         checked_addresses.append(address)
-    convert_list_of_dicts_to_csv(checked_addresses, 'output_data.csv')
+    convert_list_of_dicts_to_csv(checked_addresses, './output_data.csv')
 
 
 if __name__ == '__main__':

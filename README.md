@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ### Run the file address_validator.py
 ```
-python address_validator.py
+python code/address_validator.py
 ```
 
 P.S. You can use csv_converter.py and get_headers not only in this project:)
